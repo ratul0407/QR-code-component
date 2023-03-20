@@ -1,0 +1,75 @@
+/* setting up the custom properties */
+:root {
+  /* setting up the colors */
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(212, 45%, 89%);
+  --clr-neutral-300: hsl(220, 15%, 55%);
+  --clr-neutral-400: hsl(218, 44%, 22%);
+  /* The only font family */
+  --fm-default: "Outfit", sans-serif;
+}
+
+/* the css reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Generic styling */
+body {
+  font-family: var(--fm-default);
+  background-color: var(--clr-neutral-200);
+  position: relative;
+}
+img {
+  height: 23rem;
+  width: 26rem;
+  border-radius: 1rem;
+}
+
+main {
+  border-radius: 1rem;
+  background-color: var(--clr-neutral-100);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  height: fit-content;
+  width: 26rem;
+  text-align: center;
+}
+h1 {
+  color: var(--clr-neutral-400);
+  font-weight: 700;
+  font-size: 2rem;
+}
+p {
+  color: var(--clr-neutral-200);
+  font-size: 1.3rem;
+}
